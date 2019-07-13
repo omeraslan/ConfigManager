@@ -19,12 +19,12 @@ namespace ConfigManager.Core.DataAccess.InMemoryStorageProvider
                 .Options;
         }
 
-        public bool Add(AddConfigurationDTO dto)
+        public bool Add(AddConfigurationRepositoryDTO dto)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> AddAsync(AddConfigurationDTO dto)
+        public Task<bool> AddAsync(AddConfigurationRepositoryDTO dto)
         {
             throw new NotImplementedException();
         }

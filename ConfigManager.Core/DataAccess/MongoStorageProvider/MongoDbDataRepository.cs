@@ -25,7 +25,7 @@ namespace ConfigManager.Core.DataAccess.MongoStorageProvider
             _dbClient = new MongoClient(connectionString);
         }
 
-        public bool Add(AddConfigurationDTO dto)
+        public bool Add(AddConfigurationRepositoryDTO dto)
         {
             Collection.InsertOne(new MongoDbConfigurationEntity
             {
@@ -40,7 +40,7 @@ namespace ConfigManager.Core.DataAccess.MongoStorageProvider
             return true;
         }
 
-        public async Task<bool> AddAsync(AddConfigurationDTO dto)
+        public async Task<bool> AddAsync(AddConfigurationRepositoryDTO dto)
         {
             await Collection.InsertOneAsync(new MongoDbConfigurationEntity
             {

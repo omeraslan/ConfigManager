@@ -17,7 +17,7 @@ namespace ConfigManager.Core.Factory
         public IConfigurationEngine Create(string applicationName, ConnectionDTO connection, int refreshTimerIntervalInMs)
         {
             var storageProvider = _storageProviderFactory.Create(connection);
-            var cacheManager = _cacheManagerFactory.Create(Enums.CacheProviderType.RedisCache);
+            var cacheManager = _cacheManagerFactory.Create(Enums.CacheProviderType.MemoryCache);
 
             return new ConfigurationEngine(storageProvider, cacheManager, applicationName, refreshTimerIntervalInMs);
         }

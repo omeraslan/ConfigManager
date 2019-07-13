@@ -9,8 +9,8 @@ namespace ConfigManager.Core.Contracts
     public interface IConfigurationDataRepository
     {
         bool IsRecordExists(string key, string applicationName);
-        bool Add(AddConfigurationDTO dto);
-        Task<bool> AddAsync(AddConfigurationDTO dto);
+        bool Add(AddConfigurationRepositoryDTO dto);
+        Task<bool> AddAsync(AddConfigurationRepositoryDTO dto);
         bool Update(UpdateConfigurationDTO dto);
         ConfigurationDTO GetConfigurationById(string id);
         List<ConfigurationDTO> Search(string applicationName);

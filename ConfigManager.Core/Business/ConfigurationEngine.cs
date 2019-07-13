@@ -42,7 +42,7 @@ namespace ConfigManager.Core.Business
             var isExist = _storageProvider.IsRecordExists(dto.Name, _applicationName);
             if (!isExist)
             {
-                return _storageProvider.Add(new AddConfigurationDTO
+                return _storageProvider.Add(new AddConfigurationRepositoryDTO
                 {
                     Type = dto.Type,
                     IsActive = dto.IsActive,
@@ -65,7 +65,7 @@ namespace ConfigManager.Core.Business
             var isExist = _storageProvider.IsRecordExists(dto.Name, _applicationName);
             if (!isExist)
             {
-                return await _storageProvider.AddAsync(new AddConfigurationDTO
+                return await _storageProvider.AddAsync(new AddConfigurationRepositoryDTO
                 {
                     Type = dto.Type,
                     IsActive = dto.IsActive,
@@ -148,6 +148,11 @@ namespace ConfigManager.Core.Business
         private void FillCacheConfigurationList()
         {
             var list = _storageProvider.Search(_applicationName);
+            if (list == null)
+            {
+                return;
+            }
+
             var cacheList = list.Select(a => new CacheConfigurationDTO
             {
                 ApplicationName = a.ApplicationName,
