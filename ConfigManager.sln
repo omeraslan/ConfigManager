@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Core", "1-Core", "{087E0E4A-3F44-46D8-8E8A-18E80A2B4623}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Client", "2- Client", "{487A028A-E604-4322-9E8B-8FA24DFC9F54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigManager.Core", "ConfigManager.Core\ConfigManager.Core.csproj", "{13601BA3-6C95-4FC2-BB62-E9573C46387B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13601BA3-6C95-4FC2-BB62-E9573C46387B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13601BA3-6C95-4FC2-BB62-E9573C46387B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13601BA3-6C95-4FC2-BB62-E9573C46387B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13601BA3-6C95-4FC2-BB62-E9573C46387B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13601BA3-6C95-4FC2-BB62-E9573C46387B} = {087E0E4A-3F44-46D8-8E8A-18E80A2B4623}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B03E820D-68FC-469F-A497-AADC6A060A5F}
+	EndGlobalSection
+EndGlobal
