@@ -13,7 +13,7 @@ var value = engine.GetValue<string>("Key");
 ```
 **ApplicationName:** Uygulamanızın adı. Her uygulama kendi verilerine ulaşabilmesi için verilecek tekil ad.
 
-**Connection:** Verilerin tutulacağı depolama alanı bilgileri. Örn: ```new Connection("connectionString", StorageProviderType.MongoDb))```
+**Connection:** Verilerin tutulacağı depolama alanı bilgileri. Örn: ```new ConnectionDTO("connectionString", StorageProviderType.MongoDb))```
 
 **RefreshTimeIntervalInMs:** ConfigurationReader bu süre aralığıyla veritabanına yeni eklenen veya güncellenen bilgiler varsa cache'i günceller.
 
